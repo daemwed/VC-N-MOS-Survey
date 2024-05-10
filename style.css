@@ -1,0 +1,117 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4; /* Light gray background */
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px; /* Maximum width */
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active {
+    display: flex;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    background: linear-gradient(to right, red 10%, yellow 56%,#76B900);
+    outline: none;
+    margin-top: 20px; /* Added space above slider */
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 10px;
+    height: 25px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Match slider width */
+    margin-top: 10px; /* Margin for space below slider */
+}
+
+.label-row span {
+    flex: 1;
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to right, red, #76B900);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Added space above buttons */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 75%; /* Width to spread buttons across the slider */
+}
+
+.MOS_1 {
+    color: red;
+}
+
+.MOS_2 {
+    color: orange;
+}
+
+.MOS_3 {
+    color: yellow;
+}
+
+.MOS_4 {
+    color: #96d727;
+}
+
+.MOS_5 {
+    color: #76B900;
+}
+table {
+    /* text-align: left; */
+    /* padding-left: 5%; */
+    /* color: #76B900; */
+    /* border-collapse: separate; */
+    border-spacing: 20px 2vh; 
+    margin: 0 auto;
+}
