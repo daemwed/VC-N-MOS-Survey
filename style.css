@@ -148,13 +148,14 @@ input[type="text"] {
     border: 1px solid #ccc; /* Subtle border color for minimal design interference */
     border-radius: 4px; /* Slightly rounded corners for a modern, softened aesthetic */
 }
-input:invalid {
+input:not([type='range']):invalid {
     border: 2px solid red;
 }
 
-input:valid {
+input:not([type='range']):valid {
     border: 2px solid green;
 }
+
 select:invalid:not(:placeholder-shown) {
     border: 2px solid red;
 }
