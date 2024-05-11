@@ -4,8 +4,6 @@ body, html {
     font-family: Arial, sans-serif;
     height: 100%; /* Full height */
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +18,7 @@ body, html {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     min-width: 25vh;
-    max-width: 40vh;
+    max-width: 40vw;
     min-height: 25vh;
     text-align: center;
     flex-direction: column;
@@ -29,9 +27,13 @@ body, html {
 }
 @media (max-width: 768px) {
     .slide {
-        padding: 0; /* Removes padding on mobile devices */
+        padding: 10px;
+        margin-top: 10px;
         width: 100vw;
-        height: 100vh;
+        min-width: 100vw; /* Ensure slide takes full viewport width */
+        height: 100vh; /* Ensure slide takes full viewport height */
+        min-height: 100vh;
+        box-sizing: border-box;
     }
 
     /* Other mobile-specific adjustments */
