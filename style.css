@@ -78,20 +78,21 @@ body, html {
     box-shadow: 0px 2px 4px rgba(0,0,0,0.5); /* Add shadow here for IE/Edge */
 }
 
-.label-row {
+.label-row, .text-labels{
     display: flex;
     justify-content: space-between;
     width: 100%; /* Match slider width */
     margin-top: 10px; /* Margin for space below slider */
+    text-shadow: 0px 1px 4px rgba(0,0,0,0.1);
 }
 
-.label-row span {
+.label-row span, .text-labels span{
     flex: 1;
     text-align: center;
-    color: transparent;
-    background: linear-gradient(to right, red, #76B900);
-    -webkit-background-clip: text;
-    background-clip: text;
+    /* color: transparent; */
+    /*background: black; */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
 }
 
 button {
